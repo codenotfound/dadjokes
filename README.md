@@ -1,4 +1,5 @@
 # dadjokes
+Vue 3 + TypeScript + Tailwind
 
 ## Project setup
 ```
