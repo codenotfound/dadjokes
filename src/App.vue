@@ -1,30 +1,23 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+  <div class="p-10">
+    <div class="text-3xl font-extrabold">
+      Dad Jokes Website 😀
+    </div>
+    <div class="container mx-auto">
+      <nav class="text-sm leading-6 font-semibold text-gray-700">
+        <ul class="flex justify-center">
+          <li>
+            <router-link to="/" class="p-2 hover:text-sky-500">Random joke</router-link>
+          </li>
+          <li>
+            <router-link to="/about" class="p-2 hover:text-sky-500">About</router-link>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <router-view/>
   </div>
-  <router-view/>
 </template>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
-}
 </style>
